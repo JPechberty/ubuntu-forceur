@@ -1,0 +1,9 @@
+services:
+  intruder:
+    container_name: intruder
+    build:
+      context: .
+      dockerfile: Dockerfile
+    tty: true
+    volumes:
+      - ./files/Taskfile.yaml:/root/Taskfile.yaml

@@ -48,7 +48,7 @@ tasks:
       # Command Injection
       - echo -e "\033[1;34mTesting for Command Injection\033[0m"
       - echo -e "\033[1;34m--------------------------------\033[0m"
-      - http --verify=no GET "https://172.233.244.106?param="; ls -la"
+      - http --verify=no GET "https://172.233.244.106?param=; ls -la"
       - echo -e "\033[1;34m--------------------------------\033[0m"
       - sleep 1
       # Path Traversal
